@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap");
+:root {
+  --primary-color: #fcd34d;
+  --text-color: #1f2937;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  margin: 0;
+}
+.navigation {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 2rem;
+  font-size: 3rem;
+  color: var(--text-color);
+}
+.main-div {
+  margin: auto;
+  max-width: 600px;
+  padding: 1.5rem;
+  display: block;
+}
+#userInput {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  min-height: 20vh;
+  margin-top: 2rem;
+  padding: 1rem;
+  /* border-color: var(--text-color); */
+}
+#btn-translate {
+  padding: 1rem 3rem;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  border: 1px white solid;
+  margin: 1.5rem auto 0rem auto;
+  display: block;
+}
+#btn-translate:hover {
+  background-color: white;
+  cursor: pointer;
+  border: 1px var(--primary-color) solid;
+  color: var(--primary-color);
+}
+#translatedOutput {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 15vh;
+  border: 1px var(--text-color) solid;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  padding: 1rem;
+}
+footer {
+  width: 100%;
+  display: block;
+  background-color: var(--primary-color);
+  padding: 2rem;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+}
+#footer-about {
+  text-align: center;
+  font-size: 2rem;
+}
