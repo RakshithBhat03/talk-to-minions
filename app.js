@@ -6,7 +6,7 @@ btnTranslate.addEventListener("click", clickHandler);
 function clickHandler(event) {
   var message = inputText.value;
   var finalUrl = urlHandler(message);
-  console.log(finalUrl);
+
   fetch(finalUrl)
     .then((response) => response.json())
     .then((json) => {
@@ -19,5 +19,8 @@ function clickHandler(event) {
     });
 }
 function urlHandler(text) {
-  return url + "?text=" + text;
+  var finalUrl = url + "?text=" + text;
+  var encodedURL = encodeURI(finalUrl);
+
+  return encodedURL;
 }
